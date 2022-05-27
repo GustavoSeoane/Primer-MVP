@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Familiares.views import entrega, despedida, probando_template
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('entrega/', entrega, name = 'entrega'),    
+    path('despedida/', despedida, name = 'despedida'),  
+    path('probando-template/', probando_template, name = 'probando_template'),        
 ]
