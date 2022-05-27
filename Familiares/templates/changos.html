@@ -7,16 +7,27 @@
     <title>Document</title>
 </head>
 <body>
+
     {% for chan in todos %}
-        <h1>El nombre del familiar es:{{chan.name}}</h1>>
-        <h2>El apellido del familiar es:{{chan.last_name}}</h2>>
-        <h3>El DNI del familiar es:{{chan.dni}}</h3>>
-        <h4>El mail del familiar es:{{chan.email}}</h4>>    
-        <h5>La fecha de Nacimiento del familiar es:{{chan.fecha_nacimiento}}</h5>>           
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="card-img-top" alt="Card image cap">
+        <div class="card-body">
+        <h1 class="card-title">{{chan.name}}</h1>
+        <p class="card-text">El apellido es {{chan.last_name}} con DNI {{chan.dni}} y que nacio en el dia {{chan.fecha_nacimiento}}</p>
+        <a href="#" class="btn btn-primary">Saludar</a>
+        </div>
+      </div>
+
     {% endfor %}   
-   
+</div>
+  
 </body>
 </html>
+
+
+
+
 
 
 
